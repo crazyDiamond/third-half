@@ -19,8 +19,8 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/skeleton.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -33,6 +33,28 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <h2> sign in </h2>
+
+    <form method="post" action="../thank_you.html">
+      <div class="row">
+        <div class="four columns">
+          <label for="emailInput">EMAIL</label>
+          <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="emailInput">
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">
+          <label for="passwordInput">PASSWORD</label>
+          <input class="u-full-width" type="password" id="passwordInput">
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">
+          <h6> Forgot your password? <a class="button-primary" > Reset now >> </a> </h6>
+        </div>
+      </div>
+      <input class="button-primary" type="submit" value="Submit">
+    </form>
+
   </div>
 
 <!-- End Document
