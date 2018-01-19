@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Third-Half</title>
+  <title>Third-Half for him</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -32,20 +32,32 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-    <div class="row">
-      <div class="eleven columns"><h4>Third Half</h4> </div>
-      <div class="one column">
-        <a class="button" href="sign_in.html">Sign In</a>
+    <h2> For him </h2>
+    <form method="post" action="thank_you.html">
+      <div class="row">
+        <div class="six columns">
+          <label for="exampleRecipientInput">He likes ...</label>
+          <select class="u-full-width" id="exampleRecipientInput">
+            <option value="Option 1">Chocolates</option>
+            <option value="Option 2">Cheese</option>
+            <option value="Option 3">Beer</option>
+          </select>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <h3> Your personal assistant to curate treats for your special person</h3>
-    </div>
-    <div class="row">
-      <div class="one-half column"> <a class=" button button-primary" href="for_her.html">Gifts for her</a> </div>
-      <div class="one-half column"><a class=" button button-primary" href="for_him.html">Gifts for him</a> </div>
-    </div>
-  </div>
+      <label for="exampleMessage">Message</label>
+      <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
+      <label class="example-send-yourself-copy">
+        <input type="checkbox">
+        <span class="label-body">Send a copy to yourself</span>
+      </label>
+      <input class="button-primary" type="submit" value="Submit">
+    </form>
+</div>
+
+<!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
+
+<!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->
+
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
