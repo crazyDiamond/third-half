@@ -2,9 +2,19 @@
     "name": "node-api",
     "main": "server.js",
     "dependencies": {
-        "body-parser": "~1.0.1",
-        "express": "~4.0.0",
-        "mongodb": "^3.0.1",
-        "mongoose": "~3.6.13"
+        "body-parser": "~1.18",
+        "config": "^1.20.1",
+        "express": "~4.16",
+        "mongoose": "^4.4.15",
+        "morgan": "^1.7.0"
+    },
+    "devDependencies": {
+        "chai": "^3.5.0",
+        "chai-http": "^2.0.1",
+        "mocha": "^2.4.5"
+    },
+    "scripts": {
+        "start": "env NODE_ENV=dev node server.js",
+        "test": "mocha --timeout 10000"
     }
 }
